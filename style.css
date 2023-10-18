@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .container {
+    width: 420px;
+    background: transparent;
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color:#fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: center;
+  }
+  .input-group input {
+    background-color:rgba(0,0,0,0.2)
+    padding: 5px 10px 5px 10px;
+    border: none;
+  }
+  .input-group button{
+    background-color: #0ef;
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+  }
+  .btn {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+
+  }
+  #list {
+    list-style-type:none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin-bottom: 5px;
+  }
+
+   /* Mobile */
+@media (max-width: 320px) {
+.container {
+    width: 100%;
+    min-height: 300px;
+  } 
+  #list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin:5px auto 0 15%;
+  } 
+} 
+
+/* # Tablet */
+@media only screen and (min-width:321px) and (max-width:768px ) {
+.container {
+    width: 70%;
+    min-height: 300px;
+  }
+  #list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin:5px auto 0 10%;
+  } 
+  .input-group input {
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    width:50%;
+    margin-bottom: 5px;
+   min-width:70%;
+  }
+
+}
+/* # Desktop */
+@media only screen and (min-width: 992px) {
+.container {
+    width: 60%;
+    min-height: 300px;
+  }
+  #list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  #list li {
+    margin:5px auto 0 21%;
+  } 
+
+  .input-group input {
+
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    width:50%;
+    margin-bottom: 5px;
+  }
+
+
+}
+
+@media screen and (min-width: 1280px){
+.container {
+    width: 50%;
+    min-height: 300px;
+  }
+
+}
